@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.*?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(#4ca2cd, #67B26F, #4ca2cd);" xmlns="http://javafx.com/javafx/8.0.101" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vettiankal.mazefx.controller.ControllerEnd">
+   <left>
+      <VBox maxWidth="250.0" minHeight="250.0" prefHeight="200.0" prefWidth="250.0" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <VBox alignment="CENTER" maxWidth="250.0" minHeight="250.0" prefHeight="200.0" prefWidth="250.0" spacing="30" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="timeTaken" text="\%timetaken%" textAlignment="CENTER">
+               <font>
+                  <Font name="Algerian" size="25.0" />
+               </font></Label>
+            <Label fx:id="currLevel" text="\%level%">
+               <font>
+                  <Font name="Algerian" size="25.0" />
+               </font></Label>
+            <Label fx:id="endDistance" text="\%distanceToEnd%">
+               <font>
+                  <Font name="Algerian" size="25.0" />
+               </font></Label>
+            <Button fx:id="more" mnemonicParsing="false" style="-fx-background-color: transparent;" text="More">
+               <font>
+                  <Font name="Algerian" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="menu" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Main Menu">
+               <font>
+                  <Font name="Algerian" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children></VBox>
+   </center>
+   <right>
+      <VBox alignment="CENTER" maxWidth="250.0" minHeight="250.0" prefHeight="200.0" prefWidth="250.0" spacing="30" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="playerList" prefHeight="225.0" prefWidth="200.0" visible="false" />
+            <Button fx:id="back" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Back" visible="false">
+               <font>
+                  <Font name="Algerian" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children></VBox>
+   </right>
+    <top>
+        <Label alignment="BOTTOM_CENTER" prefHeight="100.0" text="Mazes" textAlignment="CENTER" BorderPane.alignment="CENTER">
+            <font>
+                <Font name="Algerian" size="58.0" />
+            </font>
+            <textFill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop color="#f40505" />
+                        <Stop color="#6700f8" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </textFill></Label>
+    </top>    
+</BorderPane>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-image: url(&quot;mazebackground.png&quot;);" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vettiankal.mazefx.controller.ControllerStart">
+    <center>
+        <HBox alignment="CENTER" focusTraversable="true" BorderPane.alignment="CENTER">
+            <children>
+                <VBox alignment="CENTER" prefHeight="457.0" prefWidth="200.0" spacing="30">
+                    <children>
+                        <Button fx:id="tutorial" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Tutorial">
+                            <font>
+                                <Font name="Algerian" size="25.0" />
+                            </font>
+                            <textFill>
+                                <LinearGradient endX="0.5" endY="1.0" startX="0.5">
+                                    <stops>
+                                        <Stop color="#07dbf2" />
+                                        <Stop color="#6def07" offset="1.0" />
+                                    </stops>
+                                </LinearGradient>
+                            </textFill>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor></Button>
+                        <Button fx:id="practice" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Practice">
+                            <font>
+                                <Font name="Algerian" size="25.0" />
+                            </font>
+                            <textFill>
+                                <LinearGradient endX="0.5" endY="1.0" startX="0.5">
+                                    <stops>
+                                        <Stop color="#07dbf2" />
+                                        <Stop color="#6def07" offset="1.0" />
+                                    </stops>
+                                </LinearGradient>
+                            </textFill>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor></Button>
+                        <Button fx:id="singlePlayer" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Speed Run">
+                            <font>
+                                <Font name="Algerian" size="25.0" />
+                            </font>
+                            <textFill>
+                                <LinearGradient endX="0.5" endY="1.0" startX="0.5">
+                                    <stops>
+                                        <Stop color="#07dbf2" />
+                                        <Stop color="#6def07" offset="1.0" />
+                                    </stops>
+                                </LinearGradient>
+                            </textFill>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor></Button>
+                        <Button fx:id="multiplayer" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Multiplayer">
+                            <font>
+                                <Font name="Algerian" size="25.0" />
+                            </font>
+                            <textFill>
+                                <LinearGradient endX="0.5" endY="1.0" startX="0.5">
+                                    <stops>
+                                        <Stop color="#07dbf2" />
+                                        <Stop color="#6def07" offset="1.0" />
+                                    </stops>
+                                </LinearGradient>
+                            </textFill>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor></Button>
+                    </children>
+                </VBox>
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets></HBox>
+    </center>
+    <top>
+        <Label alignment="BOTTOM_CENTER" prefHeight="100.0" text="Mazes" textAlignment="CENTER" BorderPane.alignment="CENTER">
+            <font>
+                <Font name="Algerian" size="58.0" />
+            </font>
+            <textFill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop color="#f40505" />
+                        <Stop color="#6700f8" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </textFill></Label>
+    </top>
+   <left>
+      <VBox alignment="CENTER" prefHeight="457.0" prefWidth="200.0" spacing="30" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="ipaddress" alignment="CENTER" promptText="IP Address" visible="false">
+               <font>
+                  <Font name="Arial" size="25.0" />
+               </font></TextField>
+            <TextField fx:id="name" alignment="CENTER" promptText="Name" visible="false">
+               <font>
+                  <Font name="Arial" size="25.0" />
+               </font></TextField>
+            <Button fx:id="start" disable="true" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Start" textAlignment="CENTER" visible="false">
+               <font>
+                  <Font name="Algerian" size="25.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.5" endY="1.0" startX="0.5">
+                     <stops>
+                        <Stop color="#07dbf2" />
+                        <Stop color="#6def07" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="back" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Back" textAlignment="CENTER" visible="false">
+               <font>
+                  <Font name="Algerian" size="25.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.5" endY="1.0" startX="0.5">
+                     <stops>
+                        <Stop color="#07dbf2" />
+                        <Stop color="#6def07" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <VBox alignment="CENTER" prefHeight="457.0" prefWidth="200.0" spacing="30.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="levelLabel" prefHeight="50.0" text="Level 1" visible="false">
+               <font>
+                  <Font name="Algerian" size="25.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.5" endY="1.0" startX="0.5">
+                     <stops>
+                        <Stop color="#07dbf2" />
+                        <Stop color="#6def07" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Slider fx:id="levelSlider" blockIncrement="1.0" majorTickUnit="1.0" max="7.0" min="1.0" minorTickCount="0" prefHeight="50.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" visible="false" />
+            <Button fx:id="pStart" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Start" visible="false">
+               <font>
+                  <Font name="Algerian" size="25.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.5" endY="1.0" startX="0.5">
+                     <stops>
+                        <Stop color="#07dbf2" />
+                        <Stop color="#6def07" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="pBack" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Back" visible="false">
+               <font>
+                  <Font name="Algerian" size="25.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.5" endY="1.0" startX="0.5">
+                     <stops>
+                        <Stop color="#07dbf2" />
+                        <Stop color="#6def07" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children></VBox>
+   </right>
+</BorderPane>
